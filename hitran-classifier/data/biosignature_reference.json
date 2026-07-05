@@ -1,0 +1,115 @@
+{
+  "_notes": "Approximate infrared band centers (microns) for molecules relevant to exoplanet atmosphere characterization with JWST. Widths are rough half-widths for first-pass matching. This table is a convenience default for offline use. For rigorous line-by-line identification, replace with a real HITRAN line list via hitran_classifier.hitran_loader and re-run with --hitran-file.",
+  "molecules": [
+    {
+      "name": "Water vapor",
+      "formula": "H2O",
+      "bands_um": [1.4, 1.9, 2.7, 6.3],
+      "band_width_um": 0.15,
+      "biosignature": false,
+      "abiotic_source": true,
+      "significance": "Common in both habitable and uninhabitable atmospheres. Necessary but not sufficient context for habitability.",
+      "reference": "Common atmospheric molecule; not itself a biosignature."
+    },
+    {
+      "name": "Carbon dioxide",
+      "formula": "CO2",
+      "bands_um": [2.7, 4.3, 15.0],
+      "band_width_um": 0.15,
+      "biosignature": false,
+      "abiotic_source": true,
+      "significance": "Ubiquitous in rocky planet atmospheres; context molecule, not a biosignature on its own.",
+      "reference": "Standard atmospheric constituent."
+    },
+    {
+      "name": "Methane",
+      "formula": "CH4",
+      "bands_um": [1.7, 2.3, 3.3, 7.7],
+      "band_width_um": 0.15,
+      "biosignature": true,
+      "abiotic_source": true,
+      "significance": "Can be biogenic or abiotic (volcanism, hydrothermal chemistry). Biosignature strength depends heavily on co-occurrence with other gases, especially with oxidizing species like O2 or O3 (disequilibrium pairs).",
+      "reference": "Requires context; classic disequilibrium-pair biosignature candidate when found with O2/O3."
+    },
+    {
+      "name": "Molecular oxygen",
+      "formula": "O2",
+      "bands_um": [0.76, 1.27],
+      "band_width_um": 0.05,
+      "biosignature": true,
+      "abiotic_source": false,
+      "significance": "Difficult to sustain abiotically at high abundance on an Earth-like rocky planet over geologic time. One of the strongest classical biosignature candidates, especially paired with reduced gases like CH4.",
+      "reference": "High-priority biosignature target; false positives possible via photolytic runaway processes on some planet types."
+    },
+    {
+      "name": "Ozone",
+      "formula": "O3",
+      "bands_um": [4.75, 9.6, 14.3],
+      "band_width_um": 0.2,
+      "biosignature": true,
+      "abiotic_source": false,
+      "significance": "Photochemical byproduct of O2; used as an indirect O2/biosignature proxy when O2 bands are too weak to detect directly.",
+      "reference": "Indirect oxygen proxy; strong biosignature candidate in disequilibrium context."
+    },
+    {
+      "name": "Nitrous oxide",
+      "formula": "N2O",
+      "bands_um": [4.5, 7.8, 17.0],
+      "band_width_um": 0.2,
+      "biosignature": true,
+      "abiotic_source": true,
+      "significance": "Primarily biogenic on Earth (microbial nitrogen cycle); abiotic production pathways are limited. Considered an underrated biosignature candidate.",
+      "reference": "Biogenic on Earth; low false-positive potential relative to abundance needed."
+    },
+    {
+      "name": "Dimethyl sulfide",
+      "formula": "C2H6S (DMS)",
+      "bands_um": [3.4, 7.0, 8.6],
+      "band_width_um": 0.2,
+      "biosignature": true,
+      "abiotic_source": false,
+      "significance": "Produced by marine phytoplankton on Earth; no known efficient abiotic production pathway in planetary atmospheres. High-value, low-false-positive biosignature candidate if confirmed.",
+      "reference": "Notable in K2-18 b JWST discussion; requires careful confirmation due to spectral confusion with other species."
+    },
+    {
+      "name": "Methyl chloride",
+      "formula": "CH3Cl",
+      "bands_um": [3.3, 7.1, 13.7],
+      "band_width_um": 0.2,
+      "biosignature": true,
+      "abiotic_source": true,
+      "significance": "Biogenic on Earth (produced by marine organisms, biomass burning); minor abiotic pathways exist. Considered a secondary biosignature candidate.",
+      "reference": "Secondary biosignature candidate; volcanic and biological sources both possible."
+    },
+    {
+      "name": "Ammonia",
+      "formula": "NH3",
+      "bands_um": [2.0, 2.3, 3.0, 10.5],
+      "band_width_um": 0.15,
+      "biosignature": false,
+      "abiotic_source": true,
+      "significance": "Its absence, paradoxically, has been used as an indirect argument for an ocean scrubbing it out on sub-Neptune worlds. Not a direct biosignature.",
+      "reference": "Context molecule; relevant to interior-atmosphere interaction arguments."
+    },
+    {
+      "name": "Carbon monoxide",
+      "formula": "CO",
+      "bands_um": [2.35, 4.6],
+      "band_width_um": 0.1,
+      "biosignature": false,
+      "abiotic_source": true,
+      "significance": "Its depletion relative to CO2 is sometimes cited as circumstantial biological evidence, but CO itself is not a biosignature.",
+      "reference": "Context molecule for disequilibrium chemistry arguments."
+    },
+    {
+      "name": "Hydrogen sulfide",
+      "formula": "H2S",
+      "bands_um": [2.6, 3.7, 7.5],
+      "band_width_um": 0.2,
+      "biosignature": false,
+      "abiotic_source": true,
+      "significance": "Volcanically and biologically produced on Earth; ambiguous on its own without additional context.",
+      "reference": "Ambiguous biosignature; needs co-detection context."
+    }
+  ]
+}
