@@ -99,10 +99,10 @@ tests/
 
 ## Why this exists
 
-Two extraordinary tools — JWST and HITRAN — don't speak to each other
+Two extraordinary tools,JWST and HITRAN,don't speak to each other
 automatically. Matching an observed spectral feature to a molecular
 identification means knowing which reference entries are relevant to your
-wavelength range, your planet's temperature, your star's type — work that's
+wavelength range, your planet's temperature, your star's type.. work that's
 manageable for a funded research team and a real barrier for anyone else
 trying to engage seriously with biosignature data. This is infrastructure
 to close that gap.
@@ -113,8 +113,8 @@ The built-in reference table uses approximate band centers for
 demonstration and first-pass screening. It is **not** a substitute for
 real line-by-line radiative transfer analysis. Any biosignature candidate
 flagged here needs confirmation against the full HITRAN database (or
-equivalent), atmospheric retrieval modeling, and — for anything claiming
-biological origin — a lot more scrutiny than one script can provide.
+equivalent), atmospheric retrieval modeling, and for anything claiming
+biological origin, a lot more scrutiny than one script can provide.
 
 ## License
 
